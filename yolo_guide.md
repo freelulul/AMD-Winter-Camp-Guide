@@ -7,14 +7,16 @@ ssh username@xacchead.d2.comp.nus.edu.sg
 
 # Interactive access commands for nodes
 srun -p mi210_u280_u55c --cpus-per-task=64 --pty bash -i
-                                        32
-                                        16
+         mi210_vck_u55c                 32
+                  mi100                 16
                                          8
                                          4 
 
 ```
 
-### Install
+
+
+### Yolov5-Install
 
 ```she
 git clone https://github.com/ultralytics/yolov5  # clone
@@ -28,7 +30,7 @@ to
 train_path, val_path = "/local_data/coco/images/train2017", "/local_data/coco/images/val2017"
 ```
 
-### Training
+### Yolov5-Training
 
 ```she
 # Single GPU training
